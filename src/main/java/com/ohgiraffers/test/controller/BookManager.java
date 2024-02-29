@@ -22,12 +22,12 @@ public class BookManager {
         int del = -1;
         for (BookDTO bookDTO : bookArrayList){
             if(bookDTO.getbNo()==index){
-                bookArrayList.remove(del);
-                break;
+                del = bookArrayList.indexOf(bookDTO);
+
+
             }
-
-
         }
+        bookArrayList.remove(del);
 
 
 
